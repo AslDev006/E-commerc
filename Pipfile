@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 djangorestframework = "*"
+django-resized = "*"
+django = "*"
+pillow = "*"
 
 [dev-packages]
 

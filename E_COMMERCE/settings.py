@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Packages
+    'rest_framework',
+    #LocalApps
+    'users',
+    'products',
+    'warehouse',
+    'social_media',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +128,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = "users.User"
+
+# DJANGORESIZED_DEFAULT_NORMALIZE_ROTATION = False
+# DJANGORESIZED_DEFAULT_KEEP_META = True
+# DJANGORESIZED_DEFAULT_FORCE_FORMAT = 'JPEG'
+# DJANGORESIZED_DEFAULT_FORMAT_EXTENSIONS = {'JPEG': ".jpg"}
+# DJANGORESIZED_DEFAULT_NORMALIZE_ROTATION = True
